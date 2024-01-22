@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --ff-primary: 'Roboto Mono', monospace;
+    --text-color: #CDD0D6;
+    --backgroud-color: #000000;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--ff-primary);
+    background-color: var(--backgroud-color);
+    color: var(--text-color);
+}
+
+#app {
+    max-width: 100.0rem;
+    margin: 0 auto;
+}
+
+header {
+    padding: 5.0rem 0;
+    text-align: center;
+}
+
+tbody {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10.5rem;
+    grid-row-gap: 4.5rem;
+}
+
+tr {
+    display: grid;
+    text-align: center;
+    gap: 0.8rem;
+}
+
+.movieSelected p {
+    margin-top: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
+tr img {
+    height: 15rem;
+}
